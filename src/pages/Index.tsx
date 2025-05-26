@@ -191,7 +191,7 @@ const Index = () => {
   };
 
   const renderAccueil = () => (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <div className="text-center space-y-2">
         <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
           CamFap
@@ -199,46 +199,62 @@ const Index = () => {
         <p className="text-gray-600">Découvrez nos beautés africaines</p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="space-y-3">
         {girls.map((girl) => (
-          <Card key={girl.id} className="overflow-hidden bg-white/80 backdrop-blur-sm border-0 shadow-lg">
-            <div className="relative">
-              <img 
-                src={girl.image} 
-                alt={girl.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="absolute top-2 right-2 bg-white/90 backdrop-blur px-2 py-1 rounded-full flex items-center gap-1">
-                <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                <span className="text-sm font-medium">{girl.rating}</span>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <div className="space-y-3">
-                <div>
-                  <h3 className="font-bold text-lg text-gray-800">{girl.name}</h3>
-                  <p className="text-sm text-gray-600">{girl.description}</p>
+          <Card key={girl.id} className="overflow-hidden bg-white/90 backdrop-blur-sm border border-gray-200 shadow-md rounded-xl">
+            <CardContent className="p-0">
+              <div className="flex">
+                {/* Image à gauche */}
+                <div className="relative w-24 h-24 flex-shrink-0">
+                  <img 
+                    src={girl.image} 
+                    alt={girl.name}
+                    className="w-full h-full object-cover rounded-l-xl"
+                  />
+                  <div className="absolute top-1 left-1 bg-green-500 text-white text-xs px-1.5 py-0.5 rounded-full font-bold">
+                    VIP
+                  </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-gray-500" />
-                    <span className="font-mono text-lg tracking-wider text-gray-700">
-                      {blurPhone(girl.phone)}
-                    </span>
+                {/* Contenu à droite */}
+                <div className="flex-1 p-3 flex flex-col justify-between">
+                  <div className="space-y-1">
+                    <div className="flex items-start justify-between">
+                      <h3 className="font-bold text-sm text-blue-600 leading-tight">
+                        {girl.name}
+                      </h3>
+                      <div className="flex items-center gap-1 ml-2">
+                        <Star className="w-3 h-3 text-yellow-400 fill-current" />
+                        <span className="text-xs font-medium text-gray-600">{girl.rating}</span>
+                      </div>
+                    </div>
+                    
+                    <p className="text-xs text-gray-600 leading-tight">
+                      {girl.description}
+                    </p>
+                    
+                    <div className="flex items-center gap-1 text-xs text-gray-500">
+                      <Phone className="w-3 h-3" />
+                      <span className="font-mono">
+                        {blurPhone(girl.phone)}
+                      </span>
+                    </div>
                   </div>
                   
-                  <div className="bg-gradient-to-r from-green-100 to-emerald-100 p-2 rounded-lg">
-                    <p className="text-green-800 font-semibold text-center">{girl.price}</p>
+                  <div className="flex items-center justify-between mt-2">
+                    <div className="bg-green-100 px-2 py-1 rounded-md">
+                      <p className="text-green-800 font-semibold text-xs">{girl.price}</p>
+                    </div>
+                    
+                    <Button 
+                      onClick={() => handleViewNumber(girl)}
+                      size="sm"
+                      className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white text-xs px-3 py-1 h-auto rounded-lg shadow-md"
+                    >
+                      VOIR LE NUMÉRO
+                    </Button>
                   </div>
                 </div>
-                
-                <Button 
-                  onClick={() => handleViewNumber(girl)}
-                  className="w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg transform transition-all duration-200 hover:scale-105"
-                >
-                  VOIR LE NUMÉRO
-                </Button>
               </div>
             </CardContent>
           </Card>
