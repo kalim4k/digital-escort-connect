@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -81,6 +80,105 @@ const Index = () => {
       phone: "+22897890123",
       price: "Toute la nuit 18000 FCFA",
       rating: 4.7
+    },
+    {
+      id: 9,
+      name: "Coquine Akua",
+      description: "Très expérimentée",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.39.04_7580df8e.jpg",
+      phone: "+22898901234",
+      price: "2 coups à 5500 FCFA",
+      rating: 4.6
+    },
+    {
+      id: 10,
+      name: "Sexy Adwoa",
+      description: "Chaude et disponible",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.38.18_2a63f2da.jpg",
+      phone: "+22899012345",
+      price: "1 coup à 4500 FCFA",
+      rating: 4.8
+    },
+    {
+      id: 11,
+      name: "Belle Araba",
+      description: "Gros cul - Service premium",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.36.41_0a587926.jpg",
+      phone: "+22890123457",
+      price: "Toute la nuit 20000 FCFA",
+      rating: 4.9
+    },
+    {
+      id: 12,
+      name: "Chatte Serrée Ama",
+      description: "Jeune et fraîche",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.35.51_34599ac0.jpg",
+      phone: "+22891234568",
+      price: "2 coups à 6000 FCFA",
+      rating: 4.7
+    },
+    {
+      id: 13,
+      name: "Sexy Naana",
+      description: "Experte en plaisir",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.26.39_6f6a0104.jpg",
+      phone: "+22892345679",
+      price: "3 coups à 9000 FCFA",
+      rating: 4.8
+    },
+    {
+      id: 14,
+      name: "Divine Kesi",
+      description: "Corps de déesse",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.26.03_5d06fd9a.jpg",
+      phone: "+22893456780",
+      price: "1 coup à 5500 FCFA",
+      rating: 4.6
+    },
+    {
+      id: 15,
+      name: "Charmante Aduke",
+      description: "Skinny - Très chaude",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.25.29_be203af4.jpg",
+      phone: "+22894567891",
+      price: "2 coups à 5000 FCFA",
+      rating: 4.9
+    },
+    {
+      id: 16,
+      name: "Sexy Ablavi",
+      description: "Gros seins naturels",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.25.02_15683b0d.jpg",
+      phone: "+22895678902",
+      price: "Toute la nuit 16000 FCFA",
+      rating: 4.7
+    },
+    {
+      id: 17,
+      name: "Belle Elikem",
+      description: "Service VIP exclusif",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.24.26_4718a497.jpg",
+      phone: "+22896789013",
+      price: "3 coups à 10000 FCFA",
+      rating: 4.8
+    },
+    {
+      id: 18,
+      name: "Coquine Dzidzor",
+      description: "Expérience inoubliable",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.23.58_48fd80af.jpg",
+      phone: "+22897890124",
+      price: "2 coups à 7500 FCFA",
+      rating: 4.6
+    },
+    {
+      id: 19,
+      name: "Sexy Mawusi",
+      description: "Chatte toute mouillée",
+      image: "https://orawin.fun/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-26-a-14.23.19_e002665a.jpg",
+      phone: "+22898901235",
+      price: "1 coup à 4000 FCFA",
+      rating: 4.9
     }
   ];
 
