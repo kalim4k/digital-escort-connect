@@ -1,20 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>digital-escort-connect</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>CamFap</title>
+    <meta name="description" content="CamFap - Plateforme de rencontres premium" />
+    <meta name="author" content="CamFap" />
 
-    <meta property="og:title" content="digital-escort-connect" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#e11d48" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="CamFap" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Icons -->
+    <link rel="icon" href="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="CamFap" />
+    <meta property="og:description" content="CamFap - Plateforme de rencontres premium" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:site" content="@camfap" />
+    <meta name="twitter:image" content="https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png" />
   </head>
 
   <body>
@@ -22,5 +42,21 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- PWA Install Script -->
+    <script>
+      // Register service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,42 @@
+
+{
+  "name": "CamFap - Plateforme de rencontres",
+  "short_name": "CamFap",
+  "description": "CamFap - Plateforme de rencontres premium",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e11d48",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["social", "dating"],
+  "icons": [
+    {
+      "src": "https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "apple"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://orawin.fun/wp-content/uploads/2025/05/Vivid-Red-Lips-in-Soft-Light.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
